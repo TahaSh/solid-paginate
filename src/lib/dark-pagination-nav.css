@@ -1,0 +1,49 @@
+.dark-pagination-nav .SolidPaginate_pagination-nav {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  background: #0f172a;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.dark-pagination-nav .SolidPaginate_option {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s all ease-out;
+  user-select: none;
+  color: #e0f2fe;
+  cursor: pointer;
+}
+
+.dark-pagination-nav .SolidPaginate_option.disabled {
+  cursor: default;
+  color: #64748b;
+}
+
+.dark-pagination-nav .SolidPaginate_option svg path {
+  fill: currentColor;
+}
+
+.dark-pagination-nav .SolidPaginate_option:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.dark-pagination-nav .SolidPaginate_option:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.dark-pagination-nav .SolidPaginate_option.number,
+.dark-pagination-nav .SolidPaginate_option.ellipsis {
+  padding: 10px 15px;
+}
+
+.dark-pagination-nav .SolidPaginate_option:not(.disabled):hover {
+  background: #1e293b;
+}
+
+.dark-pagination-nav .SolidPaginate_option.active {
+  color: #0ea5e9;
+}

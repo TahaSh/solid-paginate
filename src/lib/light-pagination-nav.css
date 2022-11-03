@@ -1,0 +1,41 @@
+.light-pagination-nav .SolidPaginate_pagination-nav {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  background: #f8fafc;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.light-pagination-nav .SolidPaginate_option {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s all ease-out;
+  user-select: none;
+  color: #0f172a;
+  cursor: pointer;
+}
+
+.light-pagination-nav .SolidPaginate_option.disabled {
+  cursor: default;
+  color: #64748b;
+}
+
+.light-pagination-nav .SolidPaginate_option svg path {
+  fill: currentColor;
+}
+
+.light-pagination-nav .SolidPaginate_option.number,
+.light-pagination-nav .SolidPaginate_option.ellipsis {
+  padding: 10px 15px;
+}
+
+.light-pagination-nav .SolidPaginate_option:not(.disabled):hover {
+  background: #e2e8f0;
+}
+
+.light-pagination-nav .SolidPaginate_option.active {
+  color: #0ea5e9;
+}

@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["es2020", "DOM"],
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "types": ["vite/client"],
+    "isolatedModules": true,
+    "declaration": true,
+    "declarationDir": "dist/types",
+    "strict": true,
+    "resolveJsonModule": true,
+    "noEmit": false
+  },
+  "include": ["src/lib"]
+}

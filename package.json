@@ -1,0 +1,45 @@
+{
+  "name": "solid-paginate",
+  "version": "0.0.1",
+  "description": "A SolidJS plugin for paginating your data in no time",
+  "author": "Taha Shashtari (taha@tahazsh.com)",
+  "main": "dist/solid-paginate.cjs",
+  "module": "dist/solid-paginate.mjs",
+  "types": "dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/solid-paginate.mjs",
+      "require": "./dist/solid-paginate.cjs"
+    },
+    "./styles": {
+      "import": "./dist/style.css"
+    }
+  },
+  "files": [
+    "dist",
+    "dist/types"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build.lib": "vite build --mode lib",
+    "build.types": "tsc --emitDeclarationOnly",
+    "build": "pnpm run build.lib && pnpm run build.types",
+    "serve": "vite preview",
+    "test": "vitest"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.8.2",
+    "vite": "^3.0.9",
+    "vite-plugin-solid": "^2.3.0"
+  },
+  "dependencies": {
+    "solid-js": "^1.5.1",
+    "vitest": "^0.24.5"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TahaSh/solid-paginate.git"
+  }
+}
